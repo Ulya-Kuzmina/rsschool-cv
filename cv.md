@@ -1,5 +1,5 @@
 # **Kuzmina Juliya Aleksandrovna** #
-![Photo](/front/IMG_5427.jpg)
+![Photo](/IMG_5427.jpg)
 __* tel. +7(922)3012188__ 
 __* e-mail: kojual@gmail.com__
 __* discort name: Juliya#9458__\
