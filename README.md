@@ -1,1 +1,1 @@
-https://Ulya-Kuzmina.github.io/rsschool-cv/
+https://rolling-scopes-school.github.io/Ulya-Kuzmina-JSFEPRESCHOOL2022Q4/plants/

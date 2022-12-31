@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+  body {
+    width: 1440px;
+    margin: 0 auto;
+}
+  header {
+    background: #EDF2EC;
+    font-family: 'Inika';
+    font-size: 16px;
+    display: flex;
+    padding: 42px 100px;
+    justify-content: space-between;
+  }
+  html {
+    scroll-behavior: smooth; 
+}
+  main {
+    font-family: 'Inter';
+    font-style: normal;
+}
+  footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 40px 109px 40px 109px;
+}
+  ul {
+    margin: 0;
+}
+  h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin: 0;
+ }
+  h2 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+  }
+  .nav-link:hover {
+    color: #E06733;
+  }
+  .logo {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+  }
+  .logo svg {
+    height: 20px;
+    width: 20px;
+  }
+  #welcome {
+    display: flex;
+    padding: 62px 109px;
+    background: #EDF2EC;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+  }
+  .photo {
+    height: 448.8px;
+    width: 407.36px;
+  }
+  .text_welcome {
+    width: 549px
+  }
+  .text_welcome h1 {
+    margin-bottom: 42px;
+  }
+  .text_welcome p {
+    margin-bottom: 48px;
+  }
+ .plants {
+    color: #499A18;
+  }
+.welcome_discr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+}
+.welcome-button {
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  width: 158px;
+  background: #EDF2EC;
+  padding: 10px 23px;
+}
+.button-info {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+#about {
+  display: flex;
+  justify-content: space-between;
+  padding: 93px 109px 94px 109px;
+  align-items: center;
+}
+.title_about {
+  color: #E06733;
+}
+.text-about {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+.about_text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 153px;
+}
+.service {
+  display: flex;
+  background: #EDF2EC;
+  flex-direction: column;
+  padding-left: 109px;
+  padding-right: 109px;
+}
+.service h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  width: 329px;
+  margin-bottom: 90px;
+  margin-right: 117.5px;
+}
+.service_items .service_buttons {
+  min-width: 60%;
+  margin-bottom: 90px;
+}
+.service_items div {
+  margin-bottom: 55px;
+}
+.service button {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  text-align: center;
+  width: 161px;
+  padding: 12px 40px;
+  background: #EDF2EC;
+  margin-right: 38px;
+}
+.service_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 121px;
+  align-items: center;
+}
+.service_items img {
+  width: 329px;
+  height: 350px;
+}
+.items_bottom {
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  margin: -5px auto;
+}
+.service_items h3 {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #E06733;
+}
+.service_items p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  text-align: center;
+}
+button .service {
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+#prices {
+  padding: 40px 109px 115px 109px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+.prices-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.basics,
+.standart,
+.pro_care {
+  background: #EDF2EC;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  width: 250px;
+  align-self: baseline;
+  padding: 16px 40px;
+  display: flex;
+ justify-content: space-between;
+}
+.price_form img {
+  text-align: end;
+}
+.price_form {
+  padding: 34px 41px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+.basics,
+.standart {
+  margin-bottom: 32px;
+}
+.price_section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 452px;
+}
+.price_section img {
+  width: 152px;
+  height: 175px;
+}
+.price_section h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+.gardeners {
+  color: #499A18;
+}
+.price_btn {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background: #FFFFFF;
+  padding: 12px 34px 12px 30px;
+  margin-top: 38px;
+  margin-bottom: 39px;
+}
+.title_btn {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #E06733;
+}
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #EDF2EC;
+  padding: 53px 109px 0px 109px;
+}
+.contact_title {
+  font-weight: 700;
+  text-align: center;
+}
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_choice {
+  width: 450px;
+  padding: 5px 20px;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  color: #717171;
+  letter-spacing: 0.05em;
+  align-self: baseline;
+  text-align-last: justify;
+}
+.logo img {
+  padding: 15px;
+}
+footer a {
+  text-decoration: none;
+}
