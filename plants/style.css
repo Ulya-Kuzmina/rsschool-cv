@@ -29,7 +29,7 @@
     font-size: 20px;
     line-height: 50px;
     padding: 40px 109px 40px 109px;
-  }
+}
   ul {
     margin: 0;
 }
@@ -330,4 +330,7 @@ button .service {
 }
 .logo img {
   padding: 15px;
+}
+footer a {
+  text-decoration: none;
 }
