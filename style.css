@@ -33,6 +33,9 @@
   ul {
     margin: 0;
 }
+  #burger, [for=burger]{
+    display: none;
+  }
   h1 {
     font-weight: 700;
     font-size: 45px;
@@ -65,27 +68,24 @@
   .nav-link:hover {
     color: #E06733;
   }
-  .logo {
+  .logotype {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     display: flex;
     align-items: center;
   }
-  .logo svg {
+  .logotype svg {
     height: 20px;
     width: 20px;
   }
   #welcome {
     display: flex;
-    padding: 62px 109px;
+    padding: 62px 109px 41px 109px;
     background: #EDF2EC;
+    background-size: cover;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
-  }
-  .photo {
-    height: 448.8px;
-    width: 407.36px;
   }
   .text_welcome {
     width: 549px
@@ -111,6 +111,13 @@
   width: 158px;
   background: #EDF2EC;
   padding: 10px 23px;
+}
+button:hover {
+  background: #E06733;
+  transition: background 1s ease; 
+}
+.button-info:hover{
+  color: #FFFFFF;
 }
 .button-info {
   font-family: 'Inter';
@@ -180,6 +187,10 @@
   background: #EDF2EC;
   margin-right: 38px;
 }
+.service button:hover{
+  background: #E06733;
+  color: #FFFFFF;
+}
 .service_items {
   display: flex;
   justify-content: space-between;
@@ -194,7 +205,7 @@
 }
 .items_bottom {
   border: 1px solid #E3E1D5;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0px 0px 20px 20px;
   margin: -5px auto;
 }
 .service_items h3 {
@@ -298,12 +309,15 @@ button .service {
   text-align: center;
   color: #E06733;
 }
+.title_btn:hover{
+  color: #FFFFFF;
+}
 #contacts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #EDF2EC;
-  padding: 53px 109px 0 109px;
+  padding: 53px 109px 0px 109px;
 }
 .contact_title {
   font-weight: 700;
@@ -328,9 +342,510 @@ button .service {
   align-self: baseline;
   text-align-last: justify;
 }
+.contact_choice span,img {
+  cursor:pointer;
+}
+.contact_choice_arrow {
+  border-radius: 50%;
+  background-color:#AEA1A1;
+  transition: transform .3s ease-in-out;
+}
+.contact_choice_arrow_active {
+  background-color: #8BA07E;
+  transform: rotate(180deg);
+  transition: transform .3s ease-in-out;
+}
+.contact_choice ul {
+  list-style:none;
+  padding-left: 6px;
+  display:none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-align-last: left;
+  margin-top: 12px;
+}
+.contact_choice ul li {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px #D9D9D9 solid;
+}
+.contact_choice ul li::after { 
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 1px;
+  width: 0;
+  background: #717171;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.contact_choice ul li:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+.contact_choice ul li:hover {
+  color: #499A18;
+}
+
+.disp {
+  display:block;
+}
 .logo img {
   padding: 15px;
 }
 footer a {
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+  header {
+    background: #EDF2EC;
+    font-family: 'Inika';
+    font-size: 16px;
+    display: flex;
+    padding: 35px 50px;
+    justify-content: space-between;
+  }
+  
+  #welcome {
+    display: flex;
+    padding: 40px 50px 70px 50px;
+    background: #EDF2EC;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  h1 {
+    color: #717171;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+ }
+ .welcome_discr {
+    color: #636060;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  
+  .photo img {
+    height: 254.15px;
+    width: 280px;
+  }
+  .text_welcome {
+    width: 346px;
+  }
+  .text_welcome h1 {
+    margin-bottom: 30px;
+  }
+  .text_welcome p {
+    margin-bottom: 30px;
+  }
+#about {
+    padding: 40px 50px 95px 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#about img {
+    height: 258px;
+    width: 250px;
+    margin-top: 44px;
+}
+.about_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+}
+h2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 51px;
+  color: #499A18;
+  width: 423px;
+  margin-bottom: 20px;
+}
+.text-about {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+  text-align: justify;
+}
+.service {
+  display: flex;
+  background: #EDF2EC;
+  flex-direction: column;
+  padding: 60px 50px 32px 50px;
+}
+.service h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+  color: #499A18;
+  width: 306px;
+  margin-bottom: 40px;
+}
+.service_items .service_buttons {
+  margin-bottom: 40px;
+}
+.service_items img {
+  width: 280px;
+  height: 350px;
+}
+.service_items div {
+  margin-bottom: 33px;
+}
+.items_bottom {
+  margin: -31px auto;
+}
+.service_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-items: center;
+}
+#prices {
+  padding: 40px 50px 86px 50px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+.price_section {
+  width: 296px;
+  padding-top: 89px;
+}
+.prices-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 35px;
+  line-height: 49px;
+  margin-bottom: 50px;
+  width: 135px;
+}
+.price_section h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: right;
+  color: #000000;
+  width: 296px;
+}
+.price_btn {
+  margin-top: 21.59px;
+  margin-bottom: 34px;
+  padding: 11px 34px 11px 30px;
+}
+.basics,
+.standart,
+.pro_care {
+  line-height: 18px;
+}
+.price_form {
+  padding: 33px 40px;
+}
+#contacts {
+  padding: 40px 159px 0px 159px;
+}
+.contact_title {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  color: #499A18;
+  margin-bottom: 100px;
+}
+.contact_woman {
+  width: 200px;
+  height: 248.49px;
+  margin-top: 250px;
+}
+.contact_form {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.contact_choice {
+  line-height: 40px;
+}
+.contact_choice {
+  position: relative;
+}
+.contact_choice ul {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding-left: 30px;
+  margin-top: 0;
+  width: 100%;
+  background-color: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 33px 279px 13px 279px;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin-top: 16px;
+}
+.logo img {
+  padding: 11px;
+}
+.site {
+  margin-bottom: 16px;
+  width: 210px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 380px) {
+  body {
+    width: 380px;
+    margin: 0 auto;
+  }
+  header {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 36px 25px;
+    position: relative;
+  }
+  ul .nav-list {
+    font-size: 15px;
+  }
+  .nav-list{
+    justify-content: center;
+  }
+  [for=burger]{
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 55px;
+    top: 26px;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin-top: 62px;
+    background: #EDF2EC;
+    width: 88%;
+    user-select: none;
+}
+.nav-link {
+  padding: 0 6px;
+  line-height: 35px;
+}
+#burger:checked + label + nav{
+  display: block;
+  animation: show .5s ease;
+}
+[for=burger]::before{
+  content: url('img/burger.svg');
+}
+#burger:checked +[for=burger]::before{
+  content: url('img/close.svg'); 
+}
+  .photo {
+    display: none;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 36px;
+ }
+  #welcome {
+    padding: 24px 25px;
+    background: #EDF2EC;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
+  }
+  .welcome_discr {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .text_welcome p {
+    margin-bottom: 20px;
+  }
+  .button-info {
+    font-size: 9px;
+    line-height: 20px;
+  }
+  .welcome-button {
+    width: 100px;
+    padding: 5px 18px;
+  }
+  #about {
+    padding: 30px 25px 31px 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+  h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: -webkit-center;
+}
+  .text-about {
+    font-size: 15px;
+    line-height: 24px;
+    width: 330px;
+    margin: 0;
+}
+  #about img {
+    height: 147px;
+    width: 150px;
+    margin-top: 0px;
+}
+.service {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding: 30px 50px 27px 50px;
+}
+.service h2 {
+  font-size: 25px;
+  line-height: 33px;
+  width: 187px;
+  margin-bottom: 35px;
+  margin-right: 0px;
+}
+.service button {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  width: 121px;
+  padding: 8px 28px 7px 28px;
+  margin-right: 10px;
+  margin-bottom: 9px;
+}
+.service_items p {
+  font-size: 17px;
+}
+.service_items div {
+  margin-bottom: 17px;
+}
+#prices {
+  padding: 21px 79px 45px 79px;
+  flex-direction: column;
+  align-items: center;
+}
+.price_section img {
+  display: none;
+}
+.prices-title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.price_form {
+  padding: 29px 22px;
+}
+.basics,
+.standart,
+.pro_care {
+  font-size: 15px;
+  line-height: 18px;
+  width: 180px;
+  align-self: baseline;
+  padding: 16px 40px 15px 30px;
+}
+.basics,
+.standart {
+  margin-bottom: 14px;
+}
+.price_section h2 {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  width: 230px;
+  margin-bottom: 14px;
+}
+.price_section {
+padding-top: 19px;
+align-items: center;
+}
+.price_btn {
+  padding: 8px 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.title_btn {
+  font-size: 15px;
+  line-height: 20px;
+}
+.price_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacts {
+  padding: 25px 42px 0px 42px;
+  align-items: center;
+}
+.contact_woman {
+  width: 100px;
+  height: 124.25px;
+  margin-top: 132px;
+}
+.contact_choice {
+  width: 300px;
+  padding: 5px 17px 5px 20px;
+  font-size: 20px;
+  line-height: 40px;
+  align-self: baseline;
+  text-align-last: justify;
+  position: relative;
+}
+.contact_choice ul {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+  background-color: #D6E7D2;
+}
+.contact_title {
+  font-size: 25px;
+line-height: 33px;
+margin-bottom: 80px;
+}
+footer {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 22px 85px 10px 85px;
+}
+.logo {
+  margin-top: 13px;
+}
+.logo img {
+  padding: 2px;
+}
+.msg {
+  margin-right: 20px;
+}
 }
