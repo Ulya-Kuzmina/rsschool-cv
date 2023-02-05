@@ -53,3 +53,39 @@ cityAdresses.forEach(cityAdress => {
         contacts.classList.add('contact_choice_city_visible')
     }
 });
+
+
+const buttons = document.querySelectorAll('.service_buttons button');
+const images = document.querySelectorAll('.service_photo img');
+
+buttons.forEach(button => {
+  button.onclick = event => {
+    const imageGroup = event.target.dataset.imagegroup;
+    images.forEach(image => {
+      if (image.dataset.imagegroup === imageGroup) {
+        image.classList.remove('blured');
+      } else {
+        image.classList.add('blured');
+      }
+    });
+  }
+})
+
+
+const variants = document.querySelectorAll('.price_form_variant');
+
+const selectVariant = targetVariant => {
+    variants.forEach(variant => {
+    if (variant !== targetVariant) {
+        variant.classList.remove('price_form_variant_open');
+    }
+  });
+  
+  targetVariant.classList.toggle('price_form_variant_open');
+}
+
+variants.forEach(variant => {
+  variant.onclick = event => selectVariant(event.currentTarget);
+});
+
+
