@@ -191,6 +191,7 @@ button:hover {
   background: #E06733;
   color: #FFFFFF;
 }
+
 .service_items {
   display: flex;
   justify-content: space-between;
@@ -257,7 +258,10 @@ button .service {
   padding: 16px 40px;
   display: flex;
  justify-content: space-between;
+ position: relative;
+ align-items: center;
 }
+
 .price_form img {
   text-align: end;
 }
@@ -312,6 +316,99 @@ button .service {
 .title_btn:hover{
   color: #FFFFFF;
 }
+
+.price_open_basics,
+.price_open_standart,
+.price_open_procare {
+  width: 250px;
+  background-color: #D6E7D2;
+  border-radius: 20px;
+  padding: 16px 40px 12px 40px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.price_open_standart {
+  margin-top: 85px;
+}
+.price_open_procare{
+  margin-top: 169px;
+}
+.price_choice_arrow_basic,
+.price_choice_arrow_standart,
+.price_choice_arrow_procare {
+  border-radius: 50%;
+  background-color: #AEA1A1;
+  transition: transform .3s ease-in-out;
+  width: 16px;
+  height: 16px;
+}
+.price_choice_arrow_active_basic,
+.price_choice_arrow_active_standart,
+.price_choice_arrow_active_procare {
+  background-color: #8BA07E;
+  transform: rotate(180deg);
+  transition: transform .3s ease-in-out;
+}
+.price_open_basics_visible{
+z-index: 1;
+}
+.price_open_title {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+border-bottom: 0.5px solid #AEA1A1;
+padding-bottom: 8px;
+}
+.price_descr {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 10px;
+color: #717171;
+margin-top: 15px;
+margin-bottom: 3px;
+}
+.price {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+color: #E06733;
+}
+.per_hour {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+color: #000000;
+}
+.price_open_basics button,
+.price_open_standart button,
+.price_open_procare button {
+background: #FFFFFF;
+border-radius: 10px;
+border: 1px solid white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+color: #717171;
+padding: 3px 20px;
+margin-top: 7px;
+}
+.price_open_basics button:hover,
+.price_open_standart button:hover,
+.price_open_procare button:hover {
+  background: #E06733;
+  color: #FFFFFF;
+}
 #contacts {
   display: flex;
   flex-direction: column;
@@ -329,7 +426,7 @@ button .service {
 }
 .contact_choice {
   width: 450px;
-  padding: 5px 20px;
+  position: relative;
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
@@ -340,7 +437,17 @@ button .service {
   color: #717171;
   letter-spacing: 0.05em;
   align-self: baseline;
-  text-align-last: justify;
+  z-index: 1;
+}
+.contact_choice:hover {
+background-color: #C1E698;
+}
+
+.contact_choice>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 24px 11px 20px;
 }
 .contact_choice span,img {
   cursor:pointer;
@@ -349,6 +456,8 @@ button .service {
   border-radius: 50%;
   background-color:#AEA1A1;
   transition: transform .3s ease-in-out;
+  width: 16px;
+  height: 16px;
 }
 .contact_choice_arrow_active {
   background-color: #8BA07E;
@@ -363,10 +472,11 @@ button .service {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 43px;
   letter-spacing: 0.05em;
   text-align-last: left;
-  margin-top: 12px;
+  background-color: #D6E7D2;
+  padding: 27px 0px 31px 26px;
 }
 .contact_choice ul li {
   cursor: pointer;
@@ -392,7 +502,75 @@ button .service {
 .contact_choice ul li:hover {
   color: #499A18;
 }
-
+.contact_choice_city {
+  display: none;
+  flex-wrap: wrap;
+  width: 448px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 17px 55px 32px 33px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  position: absolute;
+  margin-top: 97px;
+  z-index: 0;
+}
+.contact_choice_city_city,
+.contact_choice_city_phone,
+.contact_choice_city_adress {
+  color: #717171;
+}
+.contact_choice_city_visible {
+  display: flex;
+}
+.contact_choice_city span {
+  width: 50%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  
+}
+.contact_choice_city_descr {
+  display: flex;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  flex-flow: wrap;
+    justify-content: space-evenly;
+}
+.contact_choice_city button {
+  width: 122px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #717171;
+  background: #EDF2EC;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 6px 29px;
+  align-self: center;
+  margin: 16px 0px 0px 178px;
+}
+.contact_choice_city button:hover{
+  background: #E06733;
+  color: #FFFFFF;
+  
+}
 .disp {
   display:block;
 }
@@ -480,7 +658,6 @@ h2 {
   font-size: 35px;
   line-height: 51px;
   color: #499A18;
-  width: 423px;
   margin-bottom: 20px;
 }
 .text-about {
@@ -820,6 +997,20 @@ align-items: center;
   align-self: baseline;
   text-align-last: justify;
   position: relative;
+}
+.contact_choice>div {
+  padding: 0;
+}
+.contact_choice_city {
+  width: 282px;
+  padding: 23px 36px 23px 36px;
+  margin-top: 99px;
+}
+.contact_choice_city span {
+  width: 0;
+}
+.contact_choice_city button {
+  margin: 16px 0px 0px 10px;
 }
 .contact_choice ul {
   position: absolute;
