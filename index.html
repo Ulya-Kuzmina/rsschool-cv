@@ -39,7 +39,7 @@
     <main>
         <section id="welcome">
             <div class="photo">
-                <img class="welcome_img" src="./img/leafs(1).png" alt="welcome_img">
+                <img class="welcome_img" src="./img/leafs (1).png" alt="welcome_img">
                 
             </div>
             <div class="text_welcome">
@@ -67,11 +67,11 @@
             <div class="service_items">
                 <h2>Service and our projects</h2>
                 <div class="service_buttons">
-                    <button>Gardens</button>
+                    <button onclick="serviceFokus()">Gardens</button>
                     <button>Lawn</button>
                     <button>Planting</button>
                 </div>
-                <div>
+                <div id="gardeners">
                     <img src="./img/first.svg" alt="Garden_care">
                     <div class="items_bottom">
                         <h3>Garden care</h3>
@@ -119,24 +119,54 @@
                 <div class="price_title">
                 <h2 class="prices-title">Prices</h2>
                 <div class="price_form">
+                    <div class="price_open_basics">
+                        
+                        <span class="price_open_title">
+                            Basics
+                        </span>
+                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
+                       
+                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <span class="price"><b>$15</b> </span><span class="per_hour">/ per hour</span><br>
+                        <button>Order</button>
+                    </div>
+                    <div class="price_open_standart">
+                        <span class="price_open_title">
+                            Standart
+                        </span>
+                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
+                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <span class="price"><b>$25</b> </span><span class="per_hour">/ per hour</span><br>
+                        <button>Order</button>
+                    </div>
+                    <div class="price_open_procare">
+                        <span class="price_open_title">
+                            Pro Care
+                        </span>
+                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
+                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                        <span class="price"><b>$35</b> </span><span class="per_hour">/ per hour</span><br>
+                        <button>Order</button>
+                    </div>
                 <div class="basics">                      
                     <span>
                         Basics
                     </span>
-                    <img src="./img/btn.svg" alt="accordion_btn">         
-                </div>
+                    <img class="price_choice_arrow_basic" src="./img/accordion_btn.svg" alt="accordion_btn">        
+                </div>           
                 <div class="standart">
                     <span>
                         Standart
                     </span>
-                    <img src="./img/btn.svg" alt="accordion_btn"> 
+                    <img class="price_choice_arrow_standart" src="./img/accordion_btn.svg" alt="accordion_btn"> 
                 </div>
                 <div class="pro_care">
                     <span>
                         Pro Care
                     </span>
-                    <img src="./img/btn.svg" alt="accordion_btn">                    
+                    <img class="price_choice_arrow_procare" src="./img/accordion_btn.svg" alt="accordion_btn">                    
                 </div>
+            
             </div>
             </div>
             <div class="price_section">
@@ -151,8 +181,10 @@
             </div>
             <div class="contact_form">
                 <img class="contact_woman" src="./img/contact_woman1.svg" alt="woman">
+                <div class="contact">
                 <div class="contact_choice">
                     <div>
+                        
                         <span> 
                             City
                         </span>
@@ -164,12 +196,21 @@
                         <li>Yonkers, NY</li>
                         <li>Sherrill, NY</li>
                     </ul>
+                    
+                </div>
+                <div class="contact_choice_city">
+                    <span>City:</span><span class="contact_choice_city_city">Canandaigua, NY</span>
+                    <span>Phone:</span><span class="contact_choice_city_phone">+1 585 393 0001</span>
+                    <span>Office adress: </span><span class="contact_choice_city_adress">Charlotte Street</span>
+                    <button>Call us</button>
+                </div>
                 </div>
             </div>
+            
         </section>
     </main>
     <footer>
-        <div class="site"><a href="https://github.com/Ulya-Kuzmina/" target="blank">   &COPY;         2022          github</a></div>
+        <div class="site"><a href="https://github.com/Ulya-Kuzmina/" target="blank">   &COPY         2022          github</a></div>
         <div><a href="https://rs.school/js-stage0/ " target="blank">Rolling Scopes School</a></div>
         <div class="logo">
             <a href="https://www.instagram.com/" target="blank">
@@ -187,5 +228,8 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+    <script src="new.js"></script>
 </body>
 </html>
