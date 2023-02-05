@@ -244,9 +244,7 @@ button .service {
   color: #000000;
   margin-bottom: 60px;
 }
-.basics,
-.standart,
-.pro_care {
+.price_form_variant_select {
   background: #EDF2EC;
   border-radius: 20px;
   border: none;
@@ -270,10 +268,6 @@ button .service {
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
-.basics,
-.standart {
-  margin-bottom: 32px;
-}
 .price_section {
     display: flex;
     flex-direction: column;
@@ -293,8 +287,8 @@ button .service {
   text-align: right;
   color: #000000;
 }
-.gardeners {
-  color: #499A18;
+.blured {
+  filter: blur(2px);
 }
 .price_btn {
   border: 1px solid #E06733;
@@ -316,44 +310,40 @@ button .service {
 .title_btn:hover{
   color: #FFFFFF;
 }
-
-.price_open_basics,
-.price_open_standart,
-.price_open_procare {
+.price_form_block {
   width: 250px;
   background-color: #D6E7D2;
-  border-radius: 20px;
-  padding: 16px 40px 12px 40px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 6px 46px 12px 40px;
   display: none;
-  position: absolute;
   z-index: 1;
 }
-.price_open_standart {
-  margin-top: 85px;
+.price_form_variant_open .price_form_block {
+  display: block;
 }
-.price_open_procare{
-  margin-top: 169px;
+.price_form_variant_open div {
+  background-color: #D6E7D2;
+  
 }
-.price_choice_arrow_basic,
-.price_choice_arrow_standart,
-.price_choice_arrow_procare {
+.price_form_variant_open .price_form_variant_select {
+  border-radius: 20px 20px 0 0;
+}
+.price_form_variant_open .price_form_block {
+  border-radius: 0 0 20px 20px;
+}
+.price_choice_arrow {
   border-radius: 50%;
   background-color: #AEA1A1;
   transition: transform .3s ease-in-out;
   width: 16px;
   height: 16px;
 }
-.price_choice_arrow_active_basic,
-.price_choice_arrow_active_standart,
-.price_choice_arrow_active_procare {
+.price_choice_arrow_active {
   background-color: #8BA07E;
   transform: rotate(180deg);
   transition: transform .3s ease-in-out;
 }
-.price_open_basics_visible{
-z-index: 1;
-}
-.price_open_title {
+.price_form_block span {
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
@@ -369,7 +359,6 @@ font-weight: 300;
 font-size: 10px;
 line-height: 10px;
 color: #717171;
-margin-top: 15px;
 margin-bottom: 3px;
 }
 .price {
@@ -388,9 +377,7 @@ font-size: 12px;
 line-height: 20px;
 color: #000000;
 }
-.price_open_basics button,
-.price_open_standart button,
-.price_open_procare button {
+.price_form_block button {
 background: #FFFFFF;
 border-radius: 10px;
 border: 1px solid white;
@@ -403,9 +390,7 @@ color: #717171;
 padding: 3px 20px;
 margin-top: 7px;
 }
-.price_open_basics button:hover,
-.price_open_standart button:hover,
-.price_open_procare button:hover {
+.price_form_block:hover {
   background: #E06733;
   color: #FFFFFF;
 }
@@ -926,6 +911,7 @@ footer {
 .service_items div {
   margin-bottom: 17px;
 }
+
 #prices {
   padding: 21px 79px 45px 79px;
   flex-direction: column;
@@ -1005,12 +991,12 @@ align-items: center;
   width: 282px;
   padding: 23px 36px 23px 36px;
   margin-top: 99px;
-}
-.contact_choice_city span {
-  width: 0;
+  font-size: 11px;
+  line-height: 20px;
+
 }
 .contact_choice_city button {
-  margin: 16px 0px 0px 10px;
+  margin: 9px 0px 0px 47px;
 }
 .contact_choice ul {
   position: absolute;
