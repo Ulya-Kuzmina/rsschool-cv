@@ -67,47 +67,47 @@
             <div class="service_items">
                 <h2>Service and our projects</h2>
                 <div class="service_buttons">
-                    <button onclick="serviceFokus()">Gardens</button>
-                    <button>Lawn</button>
-                    <button>Planting</button>
+                    <button data-imageGroup="1">Gardens</button>
+                    <button data-imageGroup="2">Lawn</button>
+                    <button data-imageGroup="3">Planting</button>
                 </div>
-                <div id="gardeners">
-                    <img src="./img/first.svg" alt="Garden_care">
+                <div class="service_photo">
+                    <img src="./img/first.svg" alt="Garden_care" data-imageGroup="1">
                     <div class="items_bottom">
                         <h3>Garden care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/second.svg" alt="Planting">
+                <div class="service_photo">
+                    <img src="./img/second.svg" alt="Planting" data-imageGroup="3">
                     <div class="items_bottom">
                         <h3>Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/third.svg" alt="Lawn_care">
+                <div class="service_photo">
+                    <img src="./img/third.svg" alt="Lawn_care" data-imageGroup="2">
                     <div class="items_bottom">
                         <h3>Lawn care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/fourth.svg" alt="Planting">
+                <div class="service_photo">
+                    <img src="./img/fourth.svg" alt="Planting" data-imageGroup="3">
                     <div class="items_bottom">
                         <h3>Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/fifth.svg" alt="Garden_are">
+                <div class="service_photo">
+                    <img src="./img/fifth.svg" alt="Garden_are" data-imageGroup="1">
                     <div class="items_bottom">
                         <h3>Garden care</h3>
                         <p>Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/sixth.svg" alt="Planting">
+                <div class="service_photo">
+                    <img src="./img/sixth.svg" alt="Planting" data-imageGroup="3">
                     <div class="items_bottom">
                         <h3>Planting</h3>
                         <p>Lorem Ipsum has been the industry</p>
@@ -116,58 +116,49 @@
             </div>
         </section>
         <section id="prices">
-                <div class="price_title">
+            <div class="price_title">
                 <h2 class="prices-title">Prices</h2>
                 <div class="price_form">
-                    <div class="price_open_basics">
-                        
-                        <span class="price_open_title">
-                            Basics
-                        </span>
-                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
-                       
-                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                        <span class="price"><b>$15</b> </span><span class="per_hour">/ per hour</span><br>
-                        <button>Order</button>
+                    <div class="price_form_variant">
+                        <div class="price_form_variant_select">                      
+                            <span>
+                                Basics
+                            </span>
+                            <img class="price_choice_arrow" src="./img/accordion_btn.svg" alt="accordion_btn">        
+                        </div>
+                        <div class="price_form_block"> 
+                            <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <span class="price"><b>$15</b> </span><span class="per_hour">/ per hour</span><br>
+                            <button>Order</button>
+                        </div>
                     </div>
-                    <div class="price_open_standart">
-                        <span class="price_open_title">
-                            Standart
-                        </span>
-                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
-                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                        <span class="price"><b>$25</b> </span><span class="per_hour">/ per hour</span><br>
-                        <button>Order</button>
+                    <div class="price_form_variant">
+                        <div class="price_form_variant_select">
+                            <span>
+                                Standart
+                            </span>
+                            <img class="price_choice_arrow" src="./img/accordion_btn.svg" alt="accordion_btn"> 
+                        </div>
+                        <div class="price_form_block">
+                            <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <span class="price"><b>$25</b> </span><span class="per_hour">/ per hour</span><br>
+                            <button>Order</button>
+                        </div>
                     </div>
-                    <div class="price_open_procare">
-                        <span class="price_open_title">
-                            Pro Care
-                        </span>
-                        <img src="./img/btn.svg" alt="accordion_btn"><br>   
-                        <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                        <span class="price"><b>$35</b> </span><span class="per_hour">/ per hour</span><br>
-                        <button>Order</button>
+                    <div class="price_form_variant">
+                        <div class="price_form_variant_select">
+                            <span>
+                                Pro Care
+                            </span>
+                            <img class="price_choice_arrow" src="./img/accordion_btn.svg" alt="accordion_btn">                    
+                        </div>
+                        <div class="price_form_block"> 
+                            <p class="price_descr">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                            <span class="price"><b>$35</b> </span><span class="per_hour">/ per hour</span><br>
+                            <button>Order</button>
+                        </div>
                     </div>
-                <div class="basics">                      
-                    <span>
-                        Basics
-                    </span>
-                    <img class="price_choice_arrow_basic" src="./img/accordion_btn.svg" alt="accordion_btn">        
-                </div>           
-                <div class="standart">
-                    <span>
-                        Standart
-                    </span>
-                    <img class="price_choice_arrow_standart" src="./img/accordion_btn.svg" alt="accordion_btn"> 
                 </div>
-                <div class="pro_care">
-                    <span>
-                        Pro Care
-                    </span>
-                    <img class="price_choice_arrow_procare" src="./img/accordion_btn.svg" alt="accordion_btn">                    
-                </div>
-            
-            </div>
             </div>
             <div class="price_section">
                 <h2>Our best <span class="gardeners">gardeners</span> are ready to help you</h2>
@@ -228,8 +219,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
-    <script src="index2.js"></script>
-    <script src="index3.js"></script>
-    <script src="new.js"></script>
+    
 </body>
 </html>
